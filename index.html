@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	
+	<header class="header">
+		<nav class="header-nav">
+			<div class="header-nav__icon">
+				<span></span>
+			</div>
+			<ul class="header-nav-menu content">
+				<li><a autofocus href="#Home" class="header-nav-menu__btn">Home</a></li>
+				<li><a href="#About_me" class="header-nav-menu__btn">About me</a></li>
+				<li><a href="#Skills" class="header-nav-menu__btn">Skills</a></li>
+				<li><a href="#Portfolio" class="header-nav-menu__btn">Portfolio</a></li>
+				<li><a href="#Contacts" class="header-nav-menu__btn">Contacts</a></li>
+			</ul>
+		</nav>
+		
+		<div id="Home" class="header-about content">
+			<div class="header-about-description">
+				<div class="header-about-description__name">
+					Nikita Parfenov
+				</div>
+				<div class="header-about-description__proffesion">
+					Front-end developer
+					18 years old,<br> Saint-Petesburg
+				</div>
+			</div>
+			<div class="header-about__image">
+			</div>
+		</div>
+	</header>
+	<section class="aboutMe">
+		<div class="aboutMe-text content">
+			<h2 class="aboutMe-text__title" id="About_me">About me</h2>
+			<p class="aboutMe-text__description">Hi, I'm Nick – Front-end developer from 
+			Saint-Petersburg. I'm interested in programming and everything connected with it.</p>
+			<p class="aboutMe-text__description">I'm studying in ITMO university.</p>
+			<p class="aboutMe-text__description">Ready to implement excellent projects
+				with wonderful people.
+			</p>
+		</div>
+	</section>
+	<section class="skills content" id="Skills">
+		<h2 class="skills-title">Skills</h2>
+		<p class="skills-description">I'm working with:</p>
+		<ul class=skills-tools>
+			<li class="skills-tools__tool">
+				<div>
+					<img class="skills-tools__tool_toolIcon" src="img/icons/html.png" alt="HTML icon"><br>HTML<br>
+					<img class="skills-tools__tool_starIcon" src="img/filledStarIcon.png">
+					<img class="skills-tools__tool_starIcon" src="img/filledStarIcon.png">
+					<img class="skills-tools__tool_starIcon" src="img/filledStarIcon.png">
+					<img class="skills-tools__tool_starIcon" src="img/NotFilledStarIcon.png">
+					<img class="skills-tools__tool_starIcon" src="img/NotFilledStarIcon.png">
+				</div>
+			</li>
+			<li class="skills-tools__tool">
+				<div>
+					<img class="skills-tools__tool_toolIcon" src="img/icons/css.svg" alt="CSS icon"><br>CSS<br>
+					<img class="skills-tools__tool_starIcon" src="img/filledStarIcon.png">
+					<img class="skills-tools__tool_starIcon" src="img/filledStarIcon.png">
+					<img class="skills-tools__tool_starIcon" src="img/filledStarIcon.png">
+					<img class="skills-tools__tool_starIcon" src="img/NotFilledStarIcon.png">
+					<img class="skills-tools__tool_starIcon" src="img/NotFilledStarIcon.png">
+				</div>
+			</li>
+			<li class="skills-tools__tool">
+				<div>
+					<img class="skills-tools__tool_toolIcon" src="img/icons/js.png" alt="JS icon"><br>JavaScript<br>
+					<img class="skills-tools__tool_starIcon" src="img/filledStarIcon.png">
+					<img class="skills-tools__tool_starIcon" src="img/filledStarIcon.png">
+					<img class="skills-tools__tool_starIcon" src="img/filledStarIcon.png">
+					<img class="skills-tools__tool_starIcon" src="img/NotFilledStarIcon.png">
+					<img class="skills-tools__tool_starIcon" src="img/NotFilledStarIcon.png">
+				</div>
+			</li>
+		</ul>
+		
+	</section>
+	<section class="portfolio">
+		<div class="portfolio-header content">
+			<h2 class="portfolio-header__title" id="Portfolio">Portfolio</h2>
+			<div class="portfolio-header__counter">
+				<img class="portfolio-header__arrow" id="arrow-left" src="/img/arrow-left.png" alt=""><span id="count1"></span> <span id="delimeter">/</span> <span id="count2"></span><img id="arrow-right" class="portfolio-header__arrow" src="/img/arrow-right.png" alt="">
+			</div>
+			
+		</div>
+		<div class="portfolio-header__works content">
+			
+		</div>
+		<div class="portfolio-header__description">
+			some text
+		</div>
+	</section>
+	<footer class="footer content">
+		<h2 class="footer-title" id="Contacts">Contacts</h2>
+		<p class="footer-discription">Want to know more or just chat?<br>
+			You are welcome!</p>
+		<button class="footer-formBtn">
+			<span>Send Message</span>
+		</button>
+		<div class="footer-contacts">
+			<div class="footer-contacts-row">
+				<a class="footer-contacts-row__item" href="https://github.com/dragoneknp"><img src="/img/footer_Icons/github.png" alt=""></a>
+				<a class="footer-contacts-row__item" href="https://t.me/Dragonek"><img src="/img/footer_Icons/telegram.png" alt=""></a>
+				<a class="footer-contacts-row__item" href="https://vk.com/darkdragonek"><img src="/img/footer_Icons/vk.png" alt=""></a>
+			</div>
+			
+		</div>
+	</footer>
+	<div id="popup" class="popup hide">
+		<div class="popup__body">
+			<div class="popup__content">
+				<div class="popup__close">&times;</div>
+				<div class="popup__title">Message for me</div>
+				<form method="#" action="#">
+					<div class="popup__email">
+						<span class="popup__text">Your Email adress</span>
+						<input class="popup__input" type="email" name="email" required>
+					</div>
+					<div class="popup__message">
+						<span class="popup__text">Your Message</span>
+						<textarea name="text" class="popup__input"></textarea>
+					</div>
+					<div class="popup__submitbtn">
+						<button type="submit">
+							<span>Submit</span>
+						</button>	
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+
+
+</body>
+</html>
