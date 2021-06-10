@@ -51,10 +51,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
         // slider with content
         const data = [{
             src: "img/portfolioImg/first.png",
-            description: "Small quiz about Python on JavaScript."
+            description: "Static website on HTML."
         },{
             src: "img/portfolioImg/second.png",
-            description: "Static website on HTML."
+            description: "Small quiz about Python on JavaScript."
         }];
         
         const arrows = document.querySelectorAll(".portfolio-header__arrow");
