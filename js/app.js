@@ -67,7 +67,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         createElement();
         
         count1.textContent = index + 1;
-        description.textContent = data[index - 1].description;
+        description.textContent = data[index].description;
         arrows.forEach((item) => 
             item.addEventListener("click",(event) => {
                 let direction = event.target.id;
