@@ -15,20 +15,20 @@ window.addEventListener("DOMContentLoaded", (event) => {
         document.querySelectorAll('a[href^="#"').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
-        
+
                 let href = this.getAttribute('href').substring(1);
-        
+
                 const scrollTarget = document.getElementById(href);
-        
-                
+
+
                 const elementPosition = scrollTarget.getBoundingClientRect().top;
-                
+
                 if (document.querySelector(".header-nav__icon").classList.contains("header-nav__icon_a")){
                     document.querySelector(".header-nav__icon").classList.toggle("header-nav__icon_a");
                     document.querySelector(".header-nav-menu").classList.toggle("header-nav-menu_active");
                     document.querySelector("html").classList.toggle("_lock")
                 }
-                
+
                 window.scrollBy({
                     top: elementPosition,
                     behavior: 'smooth'
@@ -39,24 +39,24 @@ window.addEventListener("DOMContentLoaded", (event) => {
         // burger for mobile device
         document.querySelector(".header-nav__icon").addEventListener("click", (event) => {
             event.preventDefault();
-            
+
             const navMenu = document.querySelector(".header-nav-menu");
             const icon = document.querySelector(".header-nav__icon");
             icon.classList.toggle("header-nav__icon_a");
             navMenu.classList.toggle("header-nav-menu_active");
             document.querySelector("html").classList.toggle("_lock");
-            
+
         });
-        
+
         // slider with content
         const data = [{
             src: "img/portfolioImg/first.png",
-            description: "Static website on HTML."
+            description: "Small quiz about Python on JavaScript."
         },{
             src: "img/portfolioImg/second.png",
-            description: "Small quiz about Python on JavaScript."
+            description: "Static website on HTML."
         }];
-        
+
         const arrows = document.querySelectorAll(".portfolio-header__arrow");
         const content = document.querySelector(".portfolio-header__works");
         const count1 = document.querySelector("#count1");
@@ -65,15 +65,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
         count2.textContent = data.length;
         let index = 0;
         createElement();
-        
+
         count1.textContent = index + 1;
         description.textContent = data[index].description;
         arrows.forEach((item) => 
             item.addEventListener("click",(event) => {
                 let direction = event.target.id;
-        
+
                 if (direction == "arrow-left"){
-                        
+
                     if (index == 0){
                         index = data.length;
                     }
@@ -81,8 +81,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
                     createElement();
                     count1.textContent = index + 1;
                     description.textContent = data[index].description;
-        
-                    
+
+
                 }
                 else{
                     index = ++index % data.length;
@@ -91,8 +91,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
                     description.textContent = data[index].description;
                 }
             }));
-        
-        
+
+
         function createElement(){
             Object.assign(content.style, {
                 background: `url(${data[index].src})`,
@@ -113,11 +113,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
             modal.classList.toggle("show");
             modal.classList.toggle("hide");
             document.querySelector("html").classList.toggle("_lock")
-    
+
         });
         const modalClose = document.querySelector(".popup");
         const popupCont = document.querySelector(".popup__content");
-        
+
         const closeBtn = document.querySelector(".popup__close");
         modalClose.addEventListener("click", (event) => {
             event.preventDefault();
@@ -126,8 +126,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
                 modal.classList.toggle("hide");
                 document.querySelector("html").classList.toggle("_lock")
             }
-            
-            
+
+
         })
 
 })
